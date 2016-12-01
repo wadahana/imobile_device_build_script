@@ -43,23 +43,24 @@ function build_openssl()
 }
 
 #brew install autoconf
-#brew install automake 
+#brew install automake
 #brew install pkg-config
 #brew install libtool
-#brew install libxml2 
-#brew install libtasn1 
-#brew install libzip 
-#brew install libusb 
+#brew install libxml2
+#brew install libtasn1
+#brew install libzip
+#brew install libusb
 
 export PKG_CONFIG_PATH="${release_path}/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PATH="${release_path}/bin:$PATH"
 export LD_LIBRARY_PATH="${release_path}/lib:$LD_LIBRARY_PATH"
 export CPATH="${release_path}/include:$LD_LIBRARY_PATH"
-export 
+export
 #build_openssl
 #build_module "libplist" "https://github.com/libimobiledevice/libplist.git"
 #build_module "libusbmuxd" "https://github.com/libimobiledevice/libusbmuxd.git"
 #build_module "libimobiledevice" "https://github.com/libimobiledevice/libimobiledevice.git"
 build_module "usbmuxd" "http://git.sukimashita.com/usbmuxd.git"
+# path to 442f670a01f82c63d1316d60f1f47191b8bc6b5a
 build_module "ideviceinstaller" "https://github.com/libimobiledevice/ideviceinstaller.git"
 set +x
