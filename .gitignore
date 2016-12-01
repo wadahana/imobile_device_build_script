@@ -1,0 +1,13 @@
+syntax: glob
+target/
+libplist/
+libusbmuxd/
+libimobiledevice/
+usbmuxd/
+ideviceinstaller/
+libideviceactivation/
+openssl/
+._*
+*.bak
+.tags
+tags
